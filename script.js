@@ -2,6 +2,8 @@ const openButton = document.querySelector("#openButton");
 const gate = document.querySelector("#gate");
 const story = document.querySelector("#story");
 const ribbon = document.querySelector("#ribbon");
+const imageIntro = document.querySelector("#imageIntro");
+const continueButton = document.querySelector("#continueButton");
 const musicToggle = document.querySelector("#musicToggle");
 const musicLabel = document.querySelector("#musicLabel");
 const rsvpForm = document.querySelector("#rsvpForm");
@@ -55,9 +57,14 @@ openButton.addEventListener("click", () => {
   }, 480);
 });
 
+continueButton.addEventListener("click", () => {
+  imageIntro.classList.add("is-complete");
+  setTimeout(() => document.querySelector(".hero").scrollIntoView({ behavior: "smooth" }), 450);
+});
+
 musicToggle.addEventListener("click", () => setMusicState(!musicOn));
 
-const ceremonyDate = new Date("2026-10-19T10:00:00+11:00").getTime();
+const ceremonyDate = new Date("2026-01-06T10:00:00+05:30").getTime();
 function updateCountdown() {
   const distance = Math.max(0, ceremonyDate - Date.now());
   const units = {
