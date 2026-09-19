@@ -5,3 +5,4 @@
 
 body,.gate,.story,.image-intro,.hero,.section--cream,.journey{background:#fff}
 .detail-card,.detail-card--blue{background:#fff}
+.gate__celestial{width:min(240px,70vw);height:72px;margin:-21px auto 7px;opacity:.8}.gate__celestial svg{width:100%;height:100%;overflow:visible}.celestial-wing,.celestial-dove{fill:none;stroke:var(--gold);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}.celestial-dove{fill:rgba(230,202,101,.12)}.celestial-star{fill:var(--gold);animation:celestial-pulse 2.8s ease-in-out infinite alternate}@keyframes celestial-pulse{to{opacity:.25;transform:scale(.65);transform-origin:center}}
