@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f8f6f1" />
+    <meta name="description" content="The Holy Baptism of Ethan Mathew — an invitation to a blessed day." />
+    <title>The Holy Baptism of Ethan Mathew</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=DM+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-grain" aria-hidden="true"></div>
+
+    <main id="invitation">
+      <section class="gate" id="gate" aria-label="Invitation cover">
+        <div class="gate__topline">
+          <span class="eyebrow">A blessed beginning</span>
+          <button class="music-toggle" id="musicToggle" type="button" aria-label="Turn ambient music off" aria-pressed="true">
+            <span class="music-toggle__dot"></span>
+            <span id="musicLabel">Music on</span>
+          </button>
+        </div>
+
+        <div class="gate__center">
+          <div class="monogram" aria-label="E for Ethan">E</div>
+          <p class="overline">You are warmly invited to</p>
+          <h1 class="gate__title">A sacred<br /><em>new chapter</em></h1>
+          <div class="ribbon" id="ribbon" aria-hidden="true">
+            <span class="ribbon__tail ribbon__tail--left"></span>
+            <span class="ribbon__band"></span>
+            <span class="ribbon__knot"><i></i><i></i></span>
+            <span class="ribbon__tail ribbon__tail--right"></span>
+          </div>
+          <p class="gate__hint">The Holy Baptism of Ethan Mathew</p>
+          <button class="open-button" id="openButton" type="button">
+            <span>Untie ribbon &amp; open</span>
+            <span class="open-button__arrow" aria-hidden="true">↗</span>
+          </button>
+          <p class="tap-note">Tap to enter the celebration</p>
+        </div>
+        <div class="gate__footer">
+          <span>19 · 10 · 2026</span>
+          <span class="fine-rule"></span>
+          <span>With love, the Mathew family</span>
+        </div>
+      </section>
+
+      <div class="story" id="story" aria-hidden="true">
+        <section class="hero section">
+          <div class="stars" aria-hidden="true"></div>
+          <div class="halo halo--one" aria-hidden="true"></div>
+          <div class="halo halo--two" aria-hidden="true"></div>
+          <div class="hero__content">
+            <p class="eyebrow eyebrow--gold">Sunday · 19 October 2026</p>
+            <div class="hero__cross" aria-hidden="true">✝</div>
+            <h2>The Holy Baptism<br /><em>of Ethan Mathew</em></h2>
+            <p class="baptism-name">Baptised as <strong>Thomas</strong></p>
+            <p class="hero__invite">Join us for this blessed day</p>
+            <div class="countdown" aria-label="Countdown to the ceremony">
+              <div><strong id="days">00</strong><span>Days</span></div>
+              <i></i><div><strong id="hours">00</strong><span>Hours</span></div>
+              <i></i><div><strong id="minutes">00</strong><span>Minutes</span></div>
+              <i></i><div><strong id="seconds">00</strong><span>Seconds</span></div>
+            </div>
+            <a class="scroll-cue" href="#details"><span>Scroll to unfold</span><b>↓</b></a>
+          </div>
+        </section>
+
+        <section class="details section section--cream" id="details">
+          <div class="section__intro reveal">
+            <p class="eyebrow">A day held in grace</p>
+            <p class="scripture">“Every good and perfect gift is from above.”</p>
+            <span class="scripture__ref">James 1:17</span>
+          </div>
+          <div class="detail-cards reveal">
+            <article class="detail-card">
+              <span class="detail-card__number">01</span>
+              <div class="detail-card__icon">✝</div>
+              <p class="eyebrow">The holy liturgy &amp; baptism</p>
+              <h3>St. Mary’s<br /><em>Syro-Malabar Church</em></h3>
+              <p class="detail-card__meta">10:00 in the morning<br />Church Lane, Melbourne</p>
+              <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=St+Mary%27s+Syro-Malabar+Church+Melbourne" target="_blank" rel="noreferrer">Navigate to church <span>↗</span></a>
+            </article>
+            <article class="detail-card detail-card--blue">
+              <span class="detail-card__number">02</span>
+              <div class="detail-card__icon">✦</div>
+              <p class="eyebrow">The celebration</p>
+              <h3>The Garden<br /><em>House</em></h3>
+              <p class="detail-card__meta">12:30 in the afternoon<br />Rose Street, Melbourne</p>
+              <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Rose+Street+Melbourne" target="_blank" rel="noreferrer">Navigate to reception <span>↗</span></a>
+            </article>
+          </div>
+          <div class="dress-code reveal"><span class="dress-code__line"></span><p><span>Dress code</span> All-white elegance · soft pastels</p><span class="dress-code__line"></span></div>
+        </section>
+
+        <section class="journey section">
+          <div class="journey__content reveal">
+            <p class="eyebrow eyebrow--gold">A small note</p>
+            <h2>Come as you are,<br /><em>leave with joy.</em></h2>
+            <p class="journey__copy">Your presence is the most precious gift. We cannot wait to share this beautiful milestone with the people we love most.</p>
+            <div class="journey__locations">
+              <div><span class="location-pin">⌖</span><p><small>First stop</small>St. Mary’s Church</p></div>
+              <span class="location-line"></span>
+              <div><span class="location-pin">⌖</span><p><small>Then, together</small>The Garden House</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="rsvp section section--cream" id="rsvp">
+          <div class="rsvp__intro reveal">
+            <p class="eyebrow">A place for you</p>
+            <h2>Will you join<br /><em>our celebration?</em></h2>
+          </div>
+          <form class="rsvp-form reveal" id="rsvpForm">
+            <label>Guest / family name<input type="text" name="name" placeholder="Your name" required /></label>
+            <label>Attendance status<select name="attendance" required><option value="" disabled selected>Select an option</option><option>Attending ceremony only</option><option>Attending ceremony &amp; reception</option><option>Unable to attend</option></select></label>
+            <label>Total guests<input type="number" name="guests" min="1" max="20" placeholder="Adults & children" required /></label>
+            <label>Dietary requirements <span class="optional">optional</span><textarea name="dietary" rows="2" placeholder="Please let us know"></textarea></label>
+            <button class="submit-button" type="submit">Send RSVP <span>↗</span></button>
+          </form>
+          <div class="success-message" id="successMessage" role="status" hidden><span>✦</span><strong>Thank you, with love.</strong><p>Your RSVP has been received by the Mathew family.</p></div>
+          <footer class="rsvp__footer"><div class="monogram monogram--small">E</div><p>Made with love for Ethan Mathew<br /><span>19 · 10 · 2026</span></p></footer>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
