@@ -49,6 +49,7 @@ function setMusicState(isOn) {
 openButton.addEventListener("click", () => {
   ribbon.classList.add("is-untied");
   startAmbient();
+  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   setTimeout(() => {
     gate.classList.add("is-opening");
     story.classList.add("is-open");
@@ -64,9 +65,9 @@ continueButton.addEventListener("click", () => {
 
 musicToggle.addEventListener("click", () => setMusicState(!musicOn));
 
-const ceremonyDate = new Date("2026-01-06T10:00:00+05:30").getTime();
+const ceremonyDate = new Date("2027-01-06T10:00:00+05:30").getTime();
 function updateCountdown() {
-  const distance = Math.max(0, ceremonyDate - Date.now());
+  const distance = ceremonyDate - Date.now();
   const units = {
     days: Math.floor(distance / 86400000),
     hours: Math.floor((distance % 86400000) / 3600000),
