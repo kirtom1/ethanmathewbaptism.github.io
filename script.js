@@ -6,8 +6,6 @@ const imageIntro = document.querySelector("#imageIntro");
 const continueButton = document.querySelector("#continueButton");
 const musicToggle = document.querySelector("#musicToggle");
 const musicLabel = document.querySelector("#musicLabel");
-const rsvpForm = document.querySelector("#rsvpForm");
-const successMessage = document.querySelector("#successMessage");
 
 let audioContext;
 let ambientNodes = [];
@@ -87,14 +85,3 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.16 });
 document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
-
-rsvpForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  if (!rsvpForm.checkValidity()) {
-    rsvpForm.reportValidity();
-    return;
-  }
-  rsvpForm.hidden = true;
-  successMessage.hidden = false;
-  successMessage.scrollIntoView({ behavior: "smooth", block: "center" });
-});
