@@ -32,9 +32,3 @@ body,.story,.image-intro,.hero,.section--cream,.journey{background:#fff}
 @keyframes gift-bow-sway{0%,100%{transform:translateX(-50%) rotate(-3deg)}50%{transform:translateX(-50%) rotate(3deg)}}
 @keyframes gift-glow{0%,100%{opacity:.12;transform:translateX(-50%) scale(.8)}50%{opacity:.55;transform:translateX(-50%) scale(1.15)}}
 @media(prefers-reduced-motion:reduce){.gift-box:not(.is-opening) .gift-box__bow,.gift-box:not(.is-opening) .gift-box__glow{animation:none}.gift-box.is-opening .gift-box__base{animation:none}.gift-box__base{transition:none}}
-
-.image-intro.is-unfolding .image-intro__frame{transform-origin:top center;transform-style:preserve-3d;animation:invitation-unfold .9s cubic-bezier(.2,.75,.2,1) both}
-.image-intro.is-unfolding .image-intro__caption{animation:invitation-caption-reveal .55s ease .35s both}
-@keyframes invitation-unfold{0%{opacity:.65;transform:perspective(900px) rotateX(-72deg) scale(.94,.84)}55%{opacity:1;transform:perspective(900px) rotateX(9deg) scale(1,1.02)}100%{opacity:1;transform:perspective(900px) rotateX(0) scale(1,1)}}
-@keyframes invitation-caption-reveal{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-@media(prefers-reduced-motion:reduce){.image-intro.is-unfolding .image-intro__frame,.image-intro.is-unfolding .image-intro__caption{animation:none}}
