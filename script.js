@@ -5,7 +5,10 @@ const ribbon = document.querySelector("#ribbon");
 const imageIntro = document.querySelector("#imageIntro");
 const continueButton = document.querySelector("#continueButton");
 
-openButton.addEventListener("click", () => {
+let isOpening = false;
+function openInvitation() {
+  if (isOpening) return;
+  isOpening = true;
   ribbon.classList.add("is-untied");
   window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   setTimeout(() => {
@@ -14,7 +17,10 @@ openButton.addEventListener("click", () => {
     story.setAttribute("aria-hidden", "false");
     document.body.classList.add("unlocked");
   }, 480);
-});
+}
+
+openButton.addEventListener("click", openInvitation);
+ribbon.addEventListener("click", openInvitation);
 
 continueButton.addEventListener("click", () => {
   imageIntro.classList.add("is-complete");
