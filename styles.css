@@ -10,14 +10,14 @@ body,.story,.image-intro,.hero,.section--cream,.journey{background:#fff}
 .gate__celestial{width:min(240px,70vw);height:72px;margin:-21px auto 7px;opacity:.8}.gate__celestial svg{width:100%;height:100%;overflow:visible}.celestial-wing,.celestial-dove{fill:none;stroke:var(--gold);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}.celestial-dove{fill:rgba(230,202,101,.12)}.celestial-star{fill:var(--gold);animation:celestial-pulse 2.8s ease-in-out infinite alternate}@keyframes celestial-pulse{to{opacity:.25;transform:scale(.65);transform-origin:center}}
 .eyebrow,.overline,.gate__hint,.music-toggle,.open-button,.dress-code,.text-link,.rsvp-form label,.success-message{font-size:11px}.tap-note{font-size:10px}.gate__footer{font-size:9px}.baptism-name{font-size:18px}.hero__invite{font-size:20px}.scripture{font-size:29px}.countdown strong{font-size:29px}.countdown span{font-size:8px}.scroll-cue{font-size:10px}.detail-card__meta{font-size:13px}.text-link{font-size:10px}.dress-code{font-size:10px}
 
-.gift-box{position:relative;display:block;width:160px;height:124px;margin:25px auto 12px;padding:0;border:0;background:transparent;cursor:pointer;perspective:600px;appearance:none;-webkit-appearance:none}
+.gift-box{position:relative;display:block;width:190px;height:144px;margin:21px auto 10px;padding:0;border:0;background:transparent;cursor:pointer;perspective:700px;appearance:none;-webkit-appearance:none}
 .gift-box:focus-visible{outline:2px solid var(--gold);outline-offset:5px;border-radius:8px}
-.gift-box__glow{position:absolute;left:50%;top:5px;width:100px;height:85px;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(255,235,165,.95),rgba(255,235,165,0) 70%);opacity:0;transition:opacity .35s ease}
-.gift-box__base{position:absolute;left:50%;bottom:12px;width:126px;height:58px;transform:translateX(-50%);background:linear-gradient(90deg,#b18a36 0%,#d9bd6a 18%,#edda9a 50%,#c7a64e 82%,#a98536 100%);box-shadow:0 12px 20px rgba(75,57,21,.18);clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
-.gift-box__base:after{content:"";position:absolute;left:49px;top:0;width:28px;height:100%;background:linear-gradient(90deg,#5a7180,#8299a4 50%,#526b79)}
-.gift-box__lid{position:absolute;z-index:2;left:50%;top:35px;width:142px;height:25px;transform:translateX(-50%);transform-origin:50% 100%;background:linear-gradient(90deg,#a98131,#d3b45b 15%,#f1dda0 50%,#d0ae51 85%,#a47d2e);box-shadow:0 5px 8px rgba(75,57,21,.19);transition:transform .65s cubic-bezier(.2,.75,.2,1)}
-.gift-box__lid:after{content:"";position:absolute;left:57px;top:0;width:28px;height:100%;background:linear-gradient(90deg,#5a7180,#8299a4 50%,#526b79)}
-.gift-box__bow{position:absolute;z-index:3;left:50%;top:10px;width:68px;height:35px;transform:translateX(-50%);transition:transform .45s ease,opacity .3s ease}
+.gift-box__glow{position:absolute;left:50%;top:0;width:150px;height:110px;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(255,235,165,.95),rgba(255,235,165,0) 70%);opacity:0;transition:opacity .35s ease}
+.gift-box__base{position:absolute;left:50%;bottom:12px;width:144px;height:68px;transform:translateX(-50%);background:linear-gradient(90deg,#ae8737 0%,#d6c18b 9%,#f5edd9 27%,#fffaf0 50%,#f0e6ce 73%,#c5aa68 92%,#a17d34 100%);box-shadow:0 14px 22px rgba(75,57,21,.2),inset 0 -6px 0 rgba(104,78,31,.12);clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+.gift-box__base:after{content:"";position:absolute;left:56px;top:0;width:32px;height:100%;background:linear-gradient(90deg,#526b79,#9aafb6 50%,#526b79);box-shadow:inset 2px 0 rgba(255,255,255,.18),inset -2px 0 rgba(39,58,66,.12)}
+.gift-box__lid{position:absolute;z-index:2;left:50%;top:36px;width:164px;height:29px;transform:translateX(-50%);transform-origin:50% 100%;background:linear-gradient(90deg,#94712e,#c5a759 8%,#eee0b4 27%,#fff8e5 50%,#e9d9ad 73%,#bb9b50 92%,#8c692a);box-shadow:0 6px 10px rgba(75,57,21,.23);transition:transform .65s cubic-bezier(.2,.75,.2,1)}
+.gift-box__lid:after{content:"";position:absolute;left:66px;top:0;width:32px;height:100%;background:linear-gradient(90deg,#526b79,#9aafb6 50%,#526b79)}
+.gift-box__bow{position:absolute;z-index:3;left:50%;top:8px;width:76px;height:37px;transform:translateX(-50%);transition:transform .45s ease,opacity .3s ease}
 .gift-box__bow:after{content:"";position:absolute;left:50%;top:15px;width:14px;height:17px;transform:translateX(-50%);border-radius:40%;background:linear-gradient(90deg,#526b79,#9bb0b8 50%,#526b79)}
 .gift-box__bow i{position:absolute;left:4px;top:1px;width:32px;height:23px;border:1px solid #526b79;border-radius:80% 25% 70% 35%;transform:rotate(22deg);background:linear-gradient(145deg,#c4d1d3,#8299a4 65%,#e1e8e6);box-shadow:0 3px 7px rgba(75,57,21,.14)}
 .gift-box__bow i+i{left:auto;right:4px;transform:scaleX(-1) rotate(22deg)}
@@ -32,3 +32,7 @@ body,.story,.image-intro,.hero,.section--cream,.journey{background:#fff}
 @keyframes gift-bow-sway{0%,100%{transform:translateX(-50%) rotate(-3deg)}50%{transform:translateX(-50%) rotate(3deg)}}
 @keyframes gift-glow{0%,100%{opacity:.12;transform:translateX(-50%) scale(.8)}50%{opacity:.55;transform:translateX(-50%) scale(1.15)}}
 @media(prefers-reduced-motion:reduce){.gift-box:not(.is-opening) .gift-box__bow,.gift-box:not(.is-opening) .gift-box__glow{animation:none}.gift-box.is-opening .gift-box__base{animation:none}.gift-box__base{transition:none}}
+
+*,*:before,*:after{animation:none!important;transition:none!important}
+html{scroll-behavior:auto!important}
+.gate.is-opening{transform:none}

@@ -9,14 +9,11 @@ let isOpening = false;
 function openInvitation() {
   if (isOpening) return;
   isOpening = true;
-  giftBox.classList.add("is-opening");
   window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-  setTimeout(() => {
-    gate.classList.add("is-opening");
-    story.classList.add("is-open");
-    story.setAttribute("aria-hidden", "false");
-    document.body.classList.add("unlocked");
-  }, 680);
+  gate.classList.add("is-opening");
+  story.classList.add("is-open");
+  story.setAttribute("aria-hidden", "false");
+  document.body.classList.add("unlocked");
 }
 
 openButton.addEventListener("click", openInvitation);
@@ -24,7 +21,7 @@ giftBox.addEventListener("click", openInvitation);
 
 continueButton.addEventListener("click", () => {
   imageIntro.classList.add("is-complete");
-  setTimeout(() => document.querySelector(".hero").scrollIntoView({ behavior: "smooth" }), 450);
+  document.querySelector(".hero").scrollIntoView({ behavior: "auto" });
 });
 
 const ceremonyDate = new Date("2027-01-06T10:00:00+05:30").getTime();
