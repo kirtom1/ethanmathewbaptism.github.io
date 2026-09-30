@@ -33,6 +33,7 @@ body,.story,.image-intro,.hero,.section--cream,.journey{background:#fff}
 @keyframes gift-glow{0%,100%{opacity:.12;transform:translateX(-50%) scale(.8)}50%{opacity:.55;transform:translateX(-50%) scale(1.15)}}
 @media(prefers-reduced-motion:reduce){.gift-box:not(.is-opening) .gift-box__bow,.gift-box:not(.is-opening) .gift-box__glow{animation:none}.gift-box.is-opening .gift-box__base{animation:none}.gift-box__base{transition:none}}
 
-*,*:before,*:after{animation:none!important;transition:none!important}
 html{scroll-behavior:auto!important}
-.gate.is-opening{transform:none}
+.gate.is-opening{display:none}
+.story{transition:none}
+.image-intro.is-complete{display:none}

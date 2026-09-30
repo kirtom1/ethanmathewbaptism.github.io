@@ -9,11 +9,14 @@ let isOpening = false;
 function openInvitation() {
   if (isOpening) return;
   isOpening = true;
+  giftBox.classList.add("is-opening");
   window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-  gate.classList.add("is-opening");
-  story.classList.add("is-open");
-  story.setAttribute("aria-hidden", "false");
-  document.body.classList.add("unlocked");
+  setTimeout(() => {
+    gate.classList.add("is-opening");
+    story.classList.add("is-open");
+    story.setAttribute("aria-hidden", "false");
+    document.body.classList.add("unlocked");
+  }, 680);
 }
 
 openButton.addEventListener("click", openInvitation);
