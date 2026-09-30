@@ -34,6 +34,8 @@ body,.story,.image-intro,.hero,.section--cream,.journey{background:#fff}
 @media(prefers-reduced-motion:reduce){.gift-box:not(.is-opening) .gift-box__bow,.gift-box:not(.is-opening) .gift-box__glow{animation:none}.gift-box.is-opening .gift-box__base{animation:none}.gift-box__base{transition:none}}
 
 html{scroll-behavior:auto!important}
-.gate.is-opening{display:none}
+.gate[hidden]{display:none!important}
 .story{transition:none}
 .image-intro.is-complete{display:none}
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+#invitation,.story,.section{width:100%;max-width:100%;min-width:0}
