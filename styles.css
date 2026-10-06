@@ -4,8 +4,10 @@
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 
 .image-intro__message{max-width:310px;margin:0 auto;font-size:9px;line-height:1.7;letter-spacing:.12em}
-.event-info{display:inline-block;margin:24px 0 0;padding:12px 16px;border:1px solid var(--gold);background:rgba(255,255,255,.55);font-size:clamp(12px,3.5vw,16px);font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.event-info{display:inline-block;margin:24px 0 0;padding:12px 16px;border:1px solid var(--gold);background:rgba(255,255,255,.55);font:700 clamp(14px,3.8vw,19px)/1.5 var(--sans);font-style:normal;letter-spacing:.1em;text-transform:uppercase}
 .detail-card{min-height:0}
+.invitation-closing{margin:48px auto 0;text-align:center;color:#876e2e;font:italic 20px var(--serif);letter-spacing:.08em;text-transform:uppercase}
+.invitation-closing p{margin:0}
 
 .gift-box{position:relative;display:block;width:min(184px,70vw);height:94px;margin:30px auto 14px;padding:0;border:0;background:transparent;cursor:pointer;perspective:700px;appearance:none;-webkit-appearance:none}
 .gift-box:focus-visible{outline:2px solid var(--gold);outline-offset:5px;border-radius:8px}
